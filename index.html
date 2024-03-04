@@ -2,9 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget Tracker</title>
 </head>
 <body>
+<main>
+    <div class="outer-wrap">
+        <div class="inner-wrap">
+            <section class="heading">
+                     <p class="title">NotNotion</p>
+                     <p class="subtitle">Easiest Way to track your transactions</p>
+            </section>
+            <section class="transaction-control">
+                   <div class="actions">
+                       <h3>Add Transactions</h3>
+                       <form class="add">
+                           <input type="text" name="source" placeholder="source" autocomplete="off">
+                           <input type="number" name="amount" placeholder="Amount" autocomplete="off">
+                           <input type="submit" value="Add Transaction">
+                       </form>
+                   </div>
+                   <div class="stats">
+                          <h3>Statistics</h3>
+                           <p class="balance">
+                               Balance $<span id="balance">651</span>
+                           </p>
+                       <p class="income">
+                           Income $<span id="income">651</span>
+                       </p>
+                       <p class="expense">
+                           Expense $<span id="expense">651</span>
+                       </p>
+                   </div>
+            </section>
+            <section class="transaction-history">
+                <h3 style="background-color: #2ecc71; border-top-left-radius: 5px ; border-top-right-radius:5px ">Transaction History</h3>
+                <div class="records">
+                    <div class="income">
+                        <h3>Income</h3>
+                        <ul class="income-list">
+                            <li data-id="">
+                                <p>
+                                    <span>Freelancing Js project</span>
+                                    <span id="time_income">Time</span>
+                                </p>
+                                <span>700$</span>
+                                <i class="bi bi-trash delete"></i>
+                            </li>
+                        </ul>
 
+                    </div>
+                    <div class="expense">
+                        <h3>Expense</h3>
+                        <ul class="expense-list">
+                            <li data-id="">
+                                <p>
+                                    <span>Streaming</span>
+                                    <span id="time_expense">Time</span>
+                                </p>
+                                <span>700$</span>
+                                <i class="bi bi-trash delete"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
